@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="mt-4 text-5xl text-center font-semibold  ">
+          Let's get some  <span class="text-violet-600">Money!</span>    </h1>
+      
+      
+      </header>
+    <main>
+        <section>
+           <div class="w-9/12 py-10 px-4 mt-12 mx-auto div grid grid-cols-3	gap-4">
+            <div class=" rounded-xl bg-cyan-400 p-12	 "><h4
+                class="text-3xl font-medium text-white">
+                Deposite 
+            </h4>
+        <h2 class="text-5xl font-medium text-white" >$ <span id="deposite-total">00</span></h2></div>
+        <div class=" rounded-xl bg-rose-300	 p-12	 "><h4
+            class="text-3xl font-medium text-white">
+            Withdraw
+        </h4>
+    <h2 class="text-5xl font-medium text-white">$ <span id="withdraw-total">00</span> </h2></div>
+    <div class=" rounded-xl bg-pink-400	 p-12	 "><h4
+        class="text-3xl font-medium text-white">
+       Balance
+    </h4>
+<h2 class="text-5xl font-medium text-white">$ <span id="balance-total">1200</span> </h2></div>
+        
+            
+           </div>
+
+
+
+        </section>
+        <!-- deposite and withdraw -->
+        <section>
+            <div class="grid grid-cols-2 px-4 mt-12 w-9/12 mx-auto gap-4 ">
+                <div class="bg-fuchsia-400	 rounded-xl 	 p-12	 "><h4
+                    class="text-5xl font-medium text-white">
+                   Please Deposite
+                </h4>
+            <input class="mt-10 w-9/12 block mb-2 p-3 rounded-sm" type="email"  id="deposite-field" placeholder=" $ Amount you want to deposite">
+            <button id="button-deposite" class="  dark:md:hover:bg-rose-400 	 mt-3 bg-indigo-500  block px-8 capitalize	p-3 font-medium  rounded-lg text-white">
+              Deposite
+            </button></div>
+            <div class=" rounded-xl bg-purple-400		 p-12	 "><h4
+                class="text-5xl font-medium text-white">
+               Please Withdraw
+            </h4>
+        <input  class="mt-10 w-9/12 block mb-2 p-3 rounded-sm" type="email"  id="withdraw-field" placeholder=" $ Amount you want to withdraw">
+        <button id="button-withdraw" class="  dark:md:hover:bg-sky-600 	 mt-3 bg-indigo-500  block px-8 capitalize	p-3 font-medium  rounded-lg text-white">
+          Withdraw
+        </button></div>
+                
+            </div>
+        
+        </section>
+    </main>
+    <script src="deposite.js"></script>
+    <script src="withdraw.js"></script>
+    
+</body>
+</html>
